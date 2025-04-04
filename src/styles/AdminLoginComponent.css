@@ -1,0 +1,53 @@
+/* Gradient Background */
+.admin-login {
+    height: 100vh;
+    display: flex;
+    background: linear-gradient(135deg, #000000, #222222);
+    justify-content: center;
+    align-items: center;
+}
+
+/* Login Box Styling */
+.admin-login-box {
+    background: rgba(30, 30, 30, 0.95);
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
+    width: 90%;
+    max-width: 400px;
+}
+
+/* Input Fields */
+.admin-login-box input {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #666;
+    background: #111;
+    color: white;
+    border-radius: 5px;
+}
+
+/* Login Button */
+.admin-login-box button {
+    margin-top: 10px;
+    padding: 10px;
+    background: #ffcc00;
+    color: black;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.admin-login-box button:hover {
+    background: #ffaa00;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    .admin-login-box {
+        padding: 1.5rem;
+    }
+}

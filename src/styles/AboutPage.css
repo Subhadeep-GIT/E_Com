@@ -1,0 +1,11 @@
+.about-container {
+    width: 100vw;  /* Full width */
+    height: 100vh; /* Full height */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: linear-gradient(to bottom right, #000000, #1a1a1a, #333333); /* Dark gradient */
+    color: white;
+}

@@ -1,0 +1,59 @@
+.scroll-container {
+    overflow-x: auto;
+    white-space: nowrap;
+    scroll-behavior: smooth;
+    padding: 10px 0;
+}
+
+.scroll-content {
+    display: flex;
+    gap: 15px;
+}
+
+.scroll-item {
+    flex: 0 0 auto;
+    width: 100%;
+    max-width: 350px; /* Adjust for desktop */
+    scroll-snap-align: start;
+}
+
+/* Responsive adjustments */
+@media (min-width: 768px) {
+    .scroll-item {
+        max-width: 30%; /* Show 3 cards at a time on desktop */
+    }
+}
+
+@media (max-width: 767px) {
+    .scroll-item {
+        max-width: 100%; /* Show 1 card at a time on mobile */
+    }
+}
+
+/* Hide scrollbar but keep scrolling functional */
+.scroll-container::-webkit-scrollbar {
+    display: none;
+}
+
+.scroll-container {
+    overflow-x: auto;
+    display: flex;
+    white-space: nowrap;
+    scroll-behavior: smooth;
+    padding: 10px;
+    scrollbar-width: none; /* Hide scrollbar for Firefox */
+}
+
+.scroll-container::-webkit-scrollbar {
+    display: none; /* Hide scrollbar for Chrome, Safari */
+}
+
+.scroll-content {
+    display: flex;
+    gap: 16px;
+}
+
+.scroll-item {
+    flex: 0 0 auto;
+    width: 300px; /* Adjust card width */
+}
