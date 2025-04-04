@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import LandingHeaderComponent from "../components/LandingHeaderComponent"; 
+import FooterComponent from "../components/FooterComponent";
 
 import "../styles/AdminLoginComponent.css"; 
 
@@ -52,6 +53,7 @@ const AdminLoginComponent = () => {
                     </button>
                 </form>
             </div>
+            <FooterComponent /> {/* Render the footer */}
         </div>
     );
 };
