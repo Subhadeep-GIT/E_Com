@@ -1,0 +1,45 @@
+.footer {
+    width: 100%;
+    background: linear-gradient(to right, #000000, #222222);
+    padding: 20px 10px;
+    font-size: 14px;
+}
+
+/* Ensure spacing for different devices */
+@media (max-width: 576px) { /* Small Mobile */
+    .footer {
+        font-size: 12px;
+        padding: 15px 5px;
+    }
+}
+
+@media (min-width: 577px) and (max-width: 768px) { /* Medium Mobile */
+    .footer {
+        font-size: 13px;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 992px) { /* Large Mobile / Tablet */
+    .footer {
+        font-size: 14px;
+        padding: 25px;
+    }
+}
+
+@media (min-width: 993px) { /* Desktop */
+    .footer {
+        font-size: 15px;
+        padding: 30px;
+    }
+}
+
+/* Style social links */
+.footer a {
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease-in-out;
+}
+
+.footer a:hover {
+    color: #f39c12; /* Highlight color */
+}
