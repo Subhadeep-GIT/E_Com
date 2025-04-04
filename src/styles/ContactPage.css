@@ -1,0 +1,72 @@
+/* Contact Page Styling */
+.contact-container {
+    min-height: 100vh; /* Full-screen height */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to bottom right, #000000, #222222);
+    color: white;
+    padding: 50px 20px;
+    padding-bottom: 100px; /* Extra space for footer */
+}
+
+/* Centering the form */
+.contact-form-container {
+    width: 100%;
+    max-width: 600px;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Labels and Inputs */
+.contact-form-container label {
+    font-size: 1rem;
+    font-weight: 500;
+    margin-bottom: 5px;
+    display: block;
+}
+
+.contact-form-container input,
+.contact-form-container textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 5px;
+    background: rgba(255, 255, 255, 0.2);
+    color: white;
+    font-size: 1rem;
+}
+
+/* Placeholder styling */
+.contact-form-container input::placeholder,
+.contact-form-container textarea::placeholder {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+/* Button Styling */
+.contact-form-container button {
+    width: 100%;
+    background: #ff9800;
+    border: none;
+    padding: 12px;
+    font-size: 1rem;
+    font-weight: bold;
+    color: white;
+    border-radius: 5px;
+    transition: background 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.contact-form-container button:hover {
+    background: #e68900;
+}
+
+/* Ensure Footer doesn't overlap */
+.footer {
+    margin-top: auto;
+    padding-top: 20px;
+}
